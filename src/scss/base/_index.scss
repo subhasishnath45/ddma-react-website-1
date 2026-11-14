@@ -1,0 +1,10 @@
+// We use @forward "variables"; in base/_index.scss 
+// to re-export the variables as part of the base module.
+
+// So @forward creates a clean public entrypoint for 
+// the base module and hides the internal _variables.scss filename.
+
+@forward "variables";
+@forward "mixins";
+
+
