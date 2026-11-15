@@ -22,6 +22,7 @@ import '../scss/components/_navbar.scss'
 
 const Navbar = () => {
   // Local component state: is the mobile nav open?
+  // let showLinks = false;
   const [showLinks, setShowLinks] = useState(false)
 
   return (

@@ -9,6 +9,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
   // @include visually-hidden;
 
   &-banner {
@@ -39,6 +40,22 @@
       border-color: $clr-white;
     }
   }
+
+  &-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 0;
+    background: transparent;
+    color: $clr-white;
+    font-size: 2rem;
+    cursor: pointer;
+
+    &:hover { color: $clr-primary-1; }
+  }
+
+  &-arrow-left { left: 1.5rem; }
+  &-arrow-right { right: 1.5rem; }
 }
 
 @media screen and (min-width: 768px) {

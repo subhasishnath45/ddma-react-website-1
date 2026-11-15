@@ -31,10 +31,12 @@ function App() {
     // Fragment avoids wrapping everything in an unnecessary <div>
     <React.Fragment>
       <Navbar />
+      <main>
       <Hero />
       <About />
       <Services />
       <Tours />
+      </main>
       <Footer />
     </React.Fragment>
   )

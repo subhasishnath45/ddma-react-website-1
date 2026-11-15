@@ -11,10 +11,11 @@
  * - rel="noreferrer" is recommended with target="_blank" for security
  */
 
-const SocialLink = ({ itemClass, href, icon }) => {
+const SocialLink = ({ itemClass, href, icon, decernible }) => {
   return (
     <li>
       <a href={href} target='_blank' rel='noreferrer' className={itemClass}>
+        <span className="sr-only">{decernible}</span>
         <i className={icon}></i>
       </a>
     </li>

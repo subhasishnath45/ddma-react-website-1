@@ -12,6 +12,7 @@
 import aboutImg from '../images/about.jpeg'
 import Title from './Title'
 import Button from './Button.jsx'
+import ImageBox from './ImageBox.jsx'
 
 const About = () => {
   return (
@@ -20,10 +21,11 @@ const About = () => {
       <Title title='about' subTitle='us' />
 
       <div className='section-center about-center'>
-        <div className='about-img'>
-          {/* Imported image becomes a URL string used in src */}
+        {/* <div className='about-img'>
           <img src={aboutImg} className='about-photo' alt='awesome beach' />
-        </div>
+        </div> */}
+
+        <ImageBox aboutImgSrc={aboutImg} aboutImgAlt="About Us Image" extraImgClass="about-photo" />
 
         <article className='about-info'>
           <h3>explore the difference</h3>

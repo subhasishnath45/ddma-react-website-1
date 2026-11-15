@@ -191,7 +191,7 @@ p {
 //   }
 // }
 
-.about-img,
+.boxed-img,
 .about-info { margin-bottom: 2rem; }
 
 @media screen and (min-width: 992px) {
@@ -201,12 +201,12 @@ p {
     column-gap: 2rem;
   }
 
-  .about-img,
+  .boxed-img,
   .about-info { margin-bottom: 0; }
 }
 
 @media screen and (min-width: 1170px) {
-  .about-img {
+  .boxed-img {
     position: relative;
 
     &::before {

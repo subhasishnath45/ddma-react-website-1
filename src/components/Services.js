@@ -8,7 +8,6 @@
  *
  * Child = Service.js (one card)
  */
-
 import { services } from '../data'
 import Title from './Title'
 import Service from './Service'

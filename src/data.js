@@ -32,13 +32,35 @@ export const pageLinks = [
 ]
 
 /**
+ * Hero carousel slides
+ * The Hero component displays one object at a time.
+ */
+export const heroSlides = [
+  {
+    id: 1,
+    title: 'backroads app',
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae explicabo debitis est autem dicta.',
+  },
+  {
+    id: 2,
+    title: 'explore the world',
+    text: 'Discover beautiful places, meet new people, and make memories that last a lifetime.',
+  },
+  {
+    id: 3,
+    title: 'find your adventure',
+    text: 'Choose your next journey and let Backroads help you create an unforgettable experience.',
+  },
+]
+
+/**
  * Social media links used in Navbar and Footer
  * icon = Font Awesome class name string
  */
 export const socialLinks = [
-  { id: 1, href: 'https://www.twitter.com', icon: 'fab fa-facebook' },
-  { id: 2, href: 'https://www.twitter.com', icon: 'fab fa-twitter' },
-  { id: 3, href: 'https://www.twitter.com', icon: 'fab fa-squarespace' },
+  { id: 1, href: '#', icon: 'fab fa-facebook', decernible: 'Facebook Icon' },
+  { id: 2, href: '#', icon: 'fab fa-twitter', decernible: 'Twitter' },
+  { id: 3, href: '#', icon: 'fab fa-squarespace', decernible: 'Squarespace' },
 ]
 
 /**
