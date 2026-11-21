@@ -10,6 +10,8 @@
  *   About   → company intro (#about)
  *   Services→ list of service cards (#services)
  *   Tours   → featured tour cards (#tours)
+ *   Gallery → photo grid + lightbox (#gallery)
+ *   Form    → controlled contact form (#contact)
  *   Footer  → links, social icons, copyright
  *
  * React idea to remember:
@@ -25,6 +27,8 @@ import Hero from './components/Hero'
 import Navbar from './components/Navbar'
 import Services from './components/Services'
 import Tours from './components/Tours'
+import Form from './components/Form'
+import Gallery from './components/Gallery'
 
 function App() {
   return (
@@ -36,6 +40,8 @@ function App() {
       <About />
       <Services />
       <Tours />
+      <Gallery />
+      <Form />
       </main>
       <Footer />
     </React.Fragment>

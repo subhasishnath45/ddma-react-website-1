@@ -19,6 +19,12 @@ import tour1 from './images/tour-1.jpeg'
 import tour2 from './images/tour-2.jpeg'
 import tour3 from './images/tour-3.jpeg'
 import tour4 from './images/tour-4.jpeg'
+import tour5 from './images/tour-5.jpeg'
+import tour6 from './images/tour-6.jpeg'
+
+import banner1 from './images/main.jpeg';
+import banner2 from './images/main.jpeg';
+import banner3 from './images/main.jpeg';
 
 /**
  * Navigation / footer page links (in-page anchors)
@@ -29,6 +35,8 @@ export const pageLinks = [
   { id: 2, href: '#about', text: 'about' },
   { id: 3, href: '#services', text: 'services' },
   { id: 4, href: '#tours', text: 'tours' },
+  { id: 5, href: '#gallery', text: 'gallery' },
+  { id: 6, href: '#contact', text: 'contact' },
 ]
 
 /**
@@ -40,16 +48,25 @@ export const heroSlides = [
     id: 1,
     title: 'backroads app',
     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae explicabo debitis est autem dicta.',
+    buttonText: 'explore first tour',
+    buttonLink: '#tours',
+    image: banner1,
   },
   {
     id: 2,
     title: 'explore the world',
     text: 'Discover beautiful places, meet new people, and make memories that last a lifetime.',
+    buttonText: 'explore second tour',
+    buttonLink: '#tours',
+    image: banner2,
   },
   {
     id: 3,
     title: 'find your adventure',
     text: 'Choose your next journey and let Backroads help you create an unforgettable experience.',
+    buttonText: 'explore third tour',
+    buttonLink: '#tours',
+    image: banner3,
   },
 ]
 
@@ -133,4 +150,19 @@ export const tours = [
     duration: 20,
     cost: 3300,
   },
+]
+
+/**
+ * Photo gallery
+ * --------------
+ * A simple list of images. The Gallery component maps over this array.
+ * We reuse the same tour photos already used on the Tours cards.
+ */
+export const galleryPhotos = [
+  { id: 1, src: tour1, alt: 'Tibet adventure landscape' },
+  { id: 2, src: tour2, alt: 'Best of Java scenery' },
+  { id: 3, src: tour3, alt: 'Hong Kong city view' },
+  { id: 4, src: tour4, alt: 'Kenya highlights safari' },
+  { id: 5, src: tour5, alt: 'Mountain hiking trail' },
+  { id: 6, src: tour6, alt: 'Coastal tour destination' },
 ]

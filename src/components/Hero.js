@@ -11,8 +11,9 @@ import '../scss/components/_hero.scss'
 import Button from './Button.jsx'
 
 const Hero = () => {
-  const [index, setIndex] = useState(0)
-  const slide = heroSlides[index]
+  const [index, setIndex] = useState(0);
+  console.log(index);
+  const slide = heroSlides[index];
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -25,6 +26,7 @@ const Hero = () => {
   const previousSlide = () => {
     setIndex((currentIndex) =>
       currentIndex === 0 ? heroSlides.length - 1 : currentIndex - 1
+
     )
   }
 
@@ -41,8 +43,8 @@ const Hero = () => {
         {/* <a href='#tours' className='btn hero-btn '>
           explore tours
         </a> */}
-        <Button link='#tours' classes='btn hero-btn'>
-          explore tours
+        <Button link={slide.buttonLink} classes='btn hero-btn'>
+          {slide.buttonText}
         </Button>
       </div>
       <button className='hero-arrow hero-arrow-left' onClick={previousSlide} aria-label='Previous slide'>
